@@ -1,0 +1,10 @@
+.cardListDiv {
+    width: 77vw;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 38px;
+    grid-row-gap: 38px;
+    justify-items: center;
+}

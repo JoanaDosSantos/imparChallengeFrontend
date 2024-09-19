@@ -1,0 +1,48 @@
+.loader {
+    position: fixed;
+    top: calc(50% - 4rem);
+    left: calc(50% - 7rem);
+    z-index: 1000;
+
+    width: 14rem;
+    height: 8rem;
+    --g: radial-gradient(farthest-side, #ffffff52 calc(95% - 3px), var(--white-color) calc(100% - 3px) 98%, #0000 101%) no-repeat;
+    background: var(--g), var(--g), var(--g);
+    background-size: 30px 30px;
+    animation: l9 1s infinite alternate;
+}
+
+.overlay{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.433);
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+@keyframes l9 {
+    0% {
+        background-position: 0 50%, 50% 50%, 100% 50%;
+    }
+
+    20% {
+        background-position: 0 0, 50% 50%, 100% 50%;
+    }
+
+    40% {
+        background-position: 0 100%, 50% 0, 100% 50%;
+    }
+
+    60% {
+        background-position: 0 50%, 50% 100%, 100% 0;
+    }
+
+    80% {
+        background-position: 0 50%, 50% 50%, 100% 100%;
+    }
+
+    100% {
+        background-position: 0 50%, 50% 50%, 100% 50%;
+    }
+}

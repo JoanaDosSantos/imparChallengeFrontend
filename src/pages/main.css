@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+   --bg-color: #F9F0FC;
+   --white-color: #FFFFFF;
+
+   --error-color: #DB2525;
+   --contrast-color: #E76316;
+   
+   --primary-color: #5F1478;
+   --secondary-color: #AE276F;
+
+   font-family: Quicksand;
+   --text-color: #454545;
+}
+
+html {
+   background: var(--bg-color);
+   height: 100%;
+}
+
+body {
+   padding: 0;
+   margin: 0;
+}
+
+button,
+span {
+   font-family: Quicksand;
+}
+
+*::-webkit-scrollbar-thumb {
+   background-color: rgb(120, 118, 131);
+   border-radius: 20px;
+   border: 3px solid var(--contrast-color);
+}
+
+*::-webkit-scrollbar {
+   width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+   background: rgba(255, 0, 0, 0);
+}
